@@ -1,4 +1,2 @@
 # portfolio
-portfolio.december2023
-
-[view site]()
+[view site](https://leighnalariosa.github.io)

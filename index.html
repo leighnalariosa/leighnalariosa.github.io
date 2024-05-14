@@ -5,100 +5,380 @@
     <meta charset="utf-8" />
     <title>My Portfolio</title>
 
-
-    <!-- HTML5 -->
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
     <!-- VIEWPORT FOR MOBILE -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- ADOBE FONTS -->
-    <link rel="stylesheet" href="https://use.typekit.net/fjl1brc.css">
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mwq8yta.css">
+
+    <!-- MAIN CSS FILE -->
+    <link href="css/style.css?v=1" rel="stylesheet" type="text/css" />
 
 </head>
 
-<body>
+<body class="home">
 
     <header class="site-header">
         <div class="site-branding">
             <h1>
-                <a href="index.html">I'm Leighna!</a>
+                <a href="index.html"><img src="img/leighnalogo.svg" alt="Logo" width="185" height="200"></a>
             </h1>
         </div>
         <nav class="site-navigation">
             <ul>
-                <li class="selected">
-                    <a href="index.html#work" class="selected">Work</a>
+                <li>
+                    <a href="index.html#work">Work</a>
                 </li>
                 <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="about.html">It's Me!</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main class="site-main fade-and-move-in">
+    <main class="site-main">
+        <section class="hero">
+            <div id="container">
+                <lottie-player src="js/data.json" background="transparent" speed="5000" style="width:1080; height:332;"
+                    loop autoplay />
+                </lottie-player>
+            </div>
 
-        <section id="work" class="text-centered">
+            <!-- <div class="image-wrapper-fullwidth-cover">
+                <img src="img/porthero.jpg" alt="porthero" width="2000" height="1200" />
+            </div>
+        </section> -->
 
-            <div class="thumbgrid">
-                <a href="web-site.html">
-                    <img src="img/placeholder-1x1-hero.jpg" alt="placeholder" />
-                </a>
-                <a href="logo.html">
-                    <img src="img/placeholder-1x1-logo1.jpg" alt="placeholder" />
-                </a>
-                <a href="packaging-set.html">
-                    <img src="img/placeholder-1x1-packaging-set.jpg" alt="placeholder" />
-                </a>
-                <a href="stationary-set.html">
-                    <img src="img/placeholder-1x1-stationaryset1.jpg" alt="placeholder" />
-                </a>
-                <a href="book-cover.html">
-                    <img src="img/placeholder-1x1-book2.jpg" alt="placeholder" />
-                </a>
-                <a href="art-work.html">
-                    <img src="img/placeholder-1x1-art1.jpg" alt="placeholder" />
-                </a>
-                <a href="web-app.html">
-                    <img src="img/placeholder-1x1-iphone.jpg" alt="placeholder" />
-                </a>
-                <a href="promo.html">
-                    <img src="img/placeholder-1x1-video.jpg" alt="placeholder" />
-                </a>
+            <!-- <div class="rainbow-wrapper"> -->
+            <!-- ***** DON'T RECOMMENT THIS IN <img src="img/rainbow.svg" alt="rainbow" width="100" height="100"> DON'T RECOMMENT THIS IN -->
+            <!-- <svg id="rainbow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.94 25.61">
+
+                    <g>
+                        <path class="ring outtie"
+                            d="M1.68,25.61C1.68,15.68-.25,1.61,16.38,1.61c16.63,0,13.76,15.44,13.76,23.99" />
+                        <path class="ring middie" d="M7.61,25.61c0-7.45-1.13-17.99,8.59-17.99s8.05,11.58,8.05,17.99" />
+                        <path class="ring innie" d="M13.54,25.61c0-4.41-.36-10.66,2.71-10.66s2.54,6.86,2.54,10.66" />
+                    </g>
+                </svg>
+            </div> -->
+
+            <!-- <img src="img/papaya.svg" alt="papaya" width="100" height="100"> -->
+
+            <!-- <div class="image-wrapper">
+                <img src="img/homehero4.svg" alt="a happy place where delight meets design" width="3240" height="681">
+            </div> -->
+        </section>
+
+
+        <section id="work">
+
+            <div class="card-container">
+
+                <div class="expandable-cards" data-accordion>
+
+                    <details>
+                        <summary>
+                            <div class="thumb-image"><img src="img/hierrhero.jpg" alt="Hierr Logo" width="500"
+                                    height="500">
+                            </div>
+                            <div class="thumb-text">
+                                <h3>HIERR Logo</h3>
+                                <h4>Brand Identity</h4>
+                            </div>
+                        </summary>
+
+                        <a class="thumb-button" href="hierrlogo.html">
+                            <span class="hidden">view project</span>
+                        </a>
+                    </details>
+
+                    <details>
+                        <summary>
+                            <div class="thumb-image"><img src="img/houpressedthumb.jpg" alt="Hou Pressed Logo"
+                                    width="500" height="500">
+                            </div>
+                            <div class="thumb-text">
+                                <img src="img/goldpele.png" alt="gold" width="90" height="50">
+                                <h3>Hou Pressed</h3>
+                                <h4>Brand Identity</h4>
+                            </div>
+                        </summary>
+
+                        <a class="thumb-button" href="houpressed.html">
+                            <span class="hidden">view project</span>
+                        </a>
+                    </details>
+                </div>
+
+
+
+
+                <div class="expandable-cards" data-accordion>
+
+                    <details>
+                        <summary>
+                            <div class="thumb-image"><img src="img/bookcoverthumb.jpg" alt="Book Covers" width="500"
+                                    height="500">
+                            </div>
+                            <div class="thumb-text">
+                                <img src="img/goldpele.png" alt="gold" width="90" height="50">
+                                <h3>Book Covers</h3>
+                                <h4>Print Design</h4>
+                            </div>
+                        </summary>
+
+                        <a class="thumb-text" href="bookcovers.html">
+                            <span class="hidden">view project</span>
+                        </a>
+                    </details>
+
+                    <details>
+                        <summary>
+                            <div class="thumb-image"><img src="img/olympicthumb.jpg" alt="Olympic Pictograpms"
+                                    width="500" height="500">
+                            </div>
+                            <div class="thumb-text">
+                                <h3>Olympic Pictograms</h3>
+                                <h4>Iconography</h4>
+                            </div>
+                        </summary>
+
+                        <a class="thumb-text" href="pictograms.html">
+                            <span class="hidden">view project</span>
+                        </a>
+                    </details>
+
+                    <details>
+                        <summary>
+                            <div class="thumb-image"><img src="img/cropifythumb.jpg" alt="Cropify" width="500"
+                                    height="500">
+                            </div>
+                            <div class="thumb-text">
+                                <img src="img/silverpele.png" alt="silver" width="100" height="60">
+                                <h3>Cropify</h3>
+                                <h4>Mobile App</h4>
+                            </div>
+                        </summary>
+
+                        <a class="thumb-text" href="cropify.html">
+                            <span class="hidden">view project</span>
+                        </a>
+                    </details>
+
+                    <details>
+                        <summary>
+                            <div class="thumb-image"><img src="img/barcelonathumb.jpg" alt="Barcelona" width="500"
+                                    height="500">
+                            </div>
+                            <div class="thumb-text">
+                                <h3>Tourism Logo</h3>
+                                <h4>Brand Identity</h4>
+                            </div>
+                        </summary>
+
+                        <a class="thumb-text" href="barcelona.html">
+                            <span class="hidden">view project</span>
+                        </a>
+                    </details>
+
+                </div>
+
+
+
+
+                <div class="expandable-cards" data-accordion>
+
+                    <details>
+                        <summary>
+                            <div class="thumb-image"><img src="img/illthumb.jpg" alt="placeholder" width="500"
+                                    height="500">
+                            </div>
+                            <div class="thumb-text">
+                                <h3>Illustrations</h3>
+                                <h4>Fine Art</h4>
+                            </div>
+                        </summary>
+
+                        <a class="thumb-text" href="illustrations.html">
+                            <span class="hidden">view project</span>
+                        </a>
+                    </details>
+
+
+                    <!-- <details>
+                        <summary>
+                            <div class="thumb-image"><img src="img/illthumb.jpg" alt="placeholder" width="500"
+                                    height="500">
+                            </div>
+                        </summary>
+
+                        <a class="thumb-text" href="illustrations.html">
+                            <h3>Illustrations</h3>
+                            <h4>Fine Art</h4>
+                        </a>
+                    </details> -->
+
+                    <details>
+                        <summary>
+                            <div class="thumb-image"><img src="img/goodpen_thumb.jpg" alt="good pen thumb" width="500"
+                                    height="500">
+                            </div>
+                            <div class="thumb-text">
+                                <h3>Good Pen</h3>
+                                <h4>Brand Identity</h4>
+                            </div>
+                        </summary>
+
+                        <a class="thumb-text" href="goodpen.html">
+                            <span class="hidden">view project</span>
+                        </a>
+                    </details>
+
+                    <!-- 
+                    <details>
+                        <summary>
+                            <div class="thumb-image"><img src="img/goodpenthumb.jpg" alt="good pen hero" width="500"
+                                    height="500">
+                            </div>
+                        </summary>
+
+                        <a class="thumb-text" href="goodpen.html">
+                            <h3>Good Pen</h3>
+                            <h4>Brand Identity</h4>
+                        </a>
+                    </details> -->
+
+                    <details>
+                        <summary>
+                            <div class="thumb-image"><img src="img/weddingthumb.jpg" alt="placeholder" width="500"
+                                    height="500">
+                            </div>
+                            <div class="thumb-text">
+                                <h3>Galizia Wedding</h3>
+                                <h4>Brand Identity, Print Design</h4>
+                            </div>
+                        </summary>
+
+                        <a class="thumb-text" href="wedding.html">
+                            <span class="hidden">view project</span>
+                        </a>
+                    </details>
+
+                    <details>
+                        <summary>
+                            <div class="thumb-image"><img src="img/tiramisuhero1.jpg" alt="placeholder" width="500"
+                                    height="500">
+                            </div>
+                            <div class="thumb-text">
+                                <img src="img/bronzepele.png" alt="bronze" width="100" height="50">
+                                <h3>Editorial</h3>
+                                <h4>Editorial Design</h4>
+                            </div>
+                        </summary>
+
+                        <a class="thumb-text" href="editorial.html">
+                            <span class="hidden">view project</span>
+                        </a>
+                    </details>
+
+                </div>
             </div>
 
         </section>
 
     </main>
 
-    <footer class="site-footer fade-and-move-in">
-        <nav class="site-navigation">
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="index.html#work">Work</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
+    <footer class="site-footer">
+
+        <div class="home">
+            <div class="footer-img"><img src="img/papaya.svg" alt="papayalogo" width="150" height="150"></div>
+            <div class="footer-nav">
+                <ul class="homenav">
+                    <li><a href="index.html">home</a></li>
+                </ul>
+
+                <div class="eyebrow">about</div>
+                <ul class="homenav">
+                    <li><a href="about.html">it's me!</a></li>
+                </ul>
+
+                <div class="eyebrow">contact</div>
+                <ul class="homenav">
+                    <li><a href="https://www.linkedin.com/in/leighnalariosa/">linkedin</a></li>
+                    <li><a href="mailto:leighnalar@gmail.com">email me</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="work">
+
+            <div>
+                <div class="eyebrow">work</div>
+                <ul class="worknav">
+                    <li><a href="bookcovers.html">book covers</a></li>
+                    <li><a href="cropify.html">cropify</a></li>
+                    <li><a href="editorial.html">editorial</a></li>
+                    <li><a href="wedding.html"></li>galizia wedding</a></li>
+                    <li><a href="goodpen.html">good pen</a></li>
+
+
+                    <li><a href="hierrlogo.html">hierr logo</a></li>
+                    <li><a href="houpressed.html">hou pressed</a></li>
+                    <li><a href="illustrations.html">illustrations</a></li>
+                    <li><a href="pictograms.html">olympic pictograms</a></li>
+                    <li><a href="barcelona.html">tourism logo</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+
+        <div class="quote">
+            <div>
+                <blockquote class="hang">“I have no special talents. I am only passionately curious.”
+                    <cite>&mdash;Albert Einstein</cite>
+                </blockquote>
+                <div>&copy;2024 Leighna-Ann Lariosa. All Rights Reserved.</div>
+            </div>
+        </div>
+
 
     </footer>
 
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.min.js"></script>
+
+    <script>
+        /**
+     * Handle toggle events
+     * @param  {Event} event The Event object
+     */
+        function toggleHandler(event) {
+
+            // Only run if accordion is open
+            if (!event.target.hasAttribute('open')) return;
+
+            // Only run on accordions inside our selector
+            let parent = event.target.closest('[data-accordion]');
+            if (!parent) return;
+
+            // Get all open accordions inside parent
+            let opened = parent.querySelectorAll('details[open]');
+
+            // Close open ones that aren't current accordion
+            for (let accordion of opened) {
+                if (accordion === event.target) continue;
+                accordion.removeAttribute('open');
+            }
+
+        }
+
+        document.addEventListener('toggle', toggleHandler, true);
+    </script>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
